@@ -49,13 +49,13 @@
                         </label>
                     </div> 
                 </div>
-                <button>Generate passwords</button>
+                <button onclick="collectArrays(output.textContent)">Generate new passwords</button>
                 <hr>
                 <div class="pwcontainer">
-                    <div id="pw1" class="pw">sjdnfgjkdsgndfgnjk</div>
-                    <div id="pw2" class="pw">>nfJjy!dDvR&ial</div>
+                    <div class="tooltip"><p id="pw1" class="pw" onclick="copyClickPw('pw1')"></p><span class="tooltiptext" id="toolTippw1">Click to copy...</span></div>
+                    <div class="tooltip"><p id="pw2" class="pw" onclick="copyClickPw('pw2')"></p><span class="tooltiptext" id="toolTippw2">Click to copy...</span></div>
                 </div>
-            </div>
+                </div>
         </div>
         <script src="index.js"></script>
     </body>

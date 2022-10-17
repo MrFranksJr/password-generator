@@ -6,7 +6,8 @@ body {
 
 .container {
     width: 550px;
-    height: 550px;
+    min-height: 500px;
+    padding-bottom: 20px;
     border-radius: 10px;
     margin: 50px auto;
     background-color: #ECFDF5;
@@ -15,9 +16,13 @@ body {
 .content {
     position: relative;
     width: 450px;
-    height: 320px;
     margin: 0 auto;
     top: 40px;
+}
+
+#options {
+    margin: 25px auto;
+    line-height: 30px;
 }
 
 h1 {
@@ -46,7 +51,7 @@ button {
     border-radius: 6px;
     padding: 10px 20px;
     border: none;
-    margin: 15px 0px;   
+    margin: 25px 0px 0px 0px;   
 }
 button:active {
     top: 1px;
@@ -54,28 +59,26 @@ button:active {
 
 hr {
     border: solid 1px #D5D4D8;
-    margin: 25px auto;
+    margin: 35px auto;
 }
 
 .pwcontainer {
     display: flex;
-    margin: 35px 0px;
     justify-content: space-between;
+    min-height: 40px;
+    margin-bottom: 45px;
 }
 
 .pw {
-    width: 210px;
-    height: 40px;
+    width: 190px;
+    min-height: 25px;
+    line-height: 20px;
+    padding: 5px 10px;
     border-radius: 6px;
     background-color: #273549;
-    line-height: 40px;
     text-align: center;
     color: #5DEF92;
-}
-
-#options {
-    margin: 25px auto;
-    line-height: 30px;
+    word-wrap: break-word;
 }
 
 #capitals, #digits, #symbols {
@@ -91,6 +94,48 @@ hr {
 #output {
     display: inline;
 }
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    font-size: 12px;
+    width: 100px;
+    padding: 0px 10px;
+    background-color: #273549b3;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 93%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #273549b3 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 input[type=range] {
     height: 13px;
@@ -111,7 +156,7 @@ input[type=range]::-webkit-slider-runnable-track {
     border-radius: 5px;
 }
 input[type=range]::-webkit-slider-thumb {
-    border: 1px solid #273549;
+    border: 1px solid #6B7280;
     height: 15px;
     width: 15px;
     border-radius: 15px;
@@ -119,7 +164,7 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
     -webkit-appearance: none;
     appearance: none;
-    margin-top: -5.5px;
+    margin-top: -5px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
     background: #273549;
@@ -161,7 +206,7 @@ input[type=range]::-ms-fill-upper {
 }
 input[type=range]::-ms-thumb {
     margin-top: 1px;
-    border: 1px solid #273549;
+    border: 1px solid #6B7280;
     height: 15px;
     width: 15px;
     border-radius: 15px;
@@ -188,7 +233,7 @@ input[type=range]:focus::-ms-fill-upper {
     display: block;
     overflow: hidden;
     cursor: pointer;
-    border: 1px solid #273549;
+    border: 1px solid #6B7280;
     border-radius: 50px;
 }
 .flipswitch-inner {
@@ -224,9 +269,9 @@ input[type=range]:focus::-ms-fill-upper {
 .flipswitch-switch {
     width: 25px;
     height: 25px;
-    margin: -2.5px;
+    margin: -2.1px;
     background: #FFFFFF;
-    border: 1px solid #273549;
+    border: 1px solid #6B7280;
     border-radius: 50px;
     position: absolute;
     top: 0;
