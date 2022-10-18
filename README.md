@@ -5,12 +5,23 @@
 
 ## Overview
 
-Live version [here](https://frbl-blackjack.netlify.app/)
+Live version [here](https://safepwgenerator.netlify.app/)
 
 I'm currently refreshing my entire JavaScript knowledge through a course on [Scrimba](https://scrimba.com/allcourses)
-The assignment was to make a simple number generator, that at the press of a button, generates you a couple of numbers representing cards.
+The assignment was to make a simple random password generator. It basically focuses on the use of arrays and also for and if loops in JS. Quite a nice assignment to really start to master the logic.
 
-I wanted to take it a tiny bit further, wanted to make it a bit nicer to look at, I'll explain below how I worked.
+The following were the base requirements of the assignment:
+* Create a simple button to generate 2 passwords on the screen
+* Create the entire thing 'from scratch', even though we are given a base array with all the characters. I did use this template as a basis.
+* Each of the passwords should be 15 characters long
+![base requirements](https://github.com/MrFranksJr/MrFranksJr/blob/main/assets/password-generator/base-requirements.png)
+/../../../../github/docs/blob/main/assets/images/electrocat.png
+https://github.com/MrFranksJr/MrFranksJr/blob/main/assets/password-generator/base-requirements.png
+
+The following were the stretch goals of the assignment:
+* Ability to customize the pw length
+* Add copy-on-click functionality
+* Toggling to include or not include certain types of characters.
 
 ## Rules of the Game
 I'm not going to go too deep into the rules of Blackjack.
