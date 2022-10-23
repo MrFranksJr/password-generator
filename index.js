@@ -75,8 +75,8 @@ function generatePasswords(outputNumber, mergedArray) {
 //copy on click
 function copyClickPw(passBox) {
     // Get the pw
-    let copyText = document.getElementById(passBox);
-    let toolTipText = document.getElementById("toolTip" + passBox)
+    const copyText = document.getElementById(passBox);
+    const toolTipText = document.getElementById("toolTip" + passBox)
      // Copy the text inside the text field
     navigator.clipboard.writeText(copyText.textContent);
     toolTipText.textContent = "Copied!"
@@ -87,35 +87,35 @@ function copyClickPw(passBox) {
 
 //slider/rb behavior
 capitals.addEventListener('change', function() {
-    if (this.checked) {
-      hasCapitals = true
-      collectArrays()
-    } else {
-      hasCapitals = false
-      collectArrays()
-    }
-  });
+  if (this.checked) {
+    hasCapitals = true
+    collectArrays()
+  } else {
+    hasCapitals = false
+    collectArrays()
+  }
+});
   
-  digits.addEventListener('change', function() {
-      if (this.checked) {
-        hasDigits = true
-        collectArrays()
-      } else {
-        hasDigits = false
-        collectArrays()
-      }
-    })
-  
-  symbols.addEventListener('change', function() {
-      if (this.checked) {
-        hasSymbols = true
-        collectArrays()
-      } else {
-        hasSymbols = false
-        collectArrays()
-      }
-    })
-  
-    slider.addEventListener('change', function() {
-      collectArrays()
-    })
+digits.addEventListener('change', function() {
+  if (this.checked) {
+    hasDigits = true
+    collectArrays()
+  } else {
+    hasDigits = false
+    collectArrays()
+  }
+})
+
+symbols.addEventListener('change', function() {
+  if (this.checked) {
+    hasSymbols = true
+    collectArrays()
+  } else {
+    hasSymbols = false
+    collectArrays()
+  }
+})
+
+slider.addEventListener('change', function() {
+  collectArrays()
+})
