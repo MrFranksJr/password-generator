@@ -3,13 +3,13 @@ const syms = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{
 const nums = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 const lettrs = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
-let capitals = document.getElementById("fs1")
-let digits = document.getElementById("fs2")
-let symbols = document.getElementById("fs3")
-let slider = document.getElementById("myRange")
-let output = document.getElementById("output")
-let passOne = document.getElementById("pw1")
-let passTwo = document.getElementById("pw2")
+const capitals = document.getElementById("fs1")
+const digits = document.getElementById("fs2")
+const symbols = document.getElementById("fs3")
+const slider = document.getElementById("myRange")
+const output = document.getElementById("output")
+const passOne = document.getElementById("pw1")
+const passTwo = document.getElementById("pw2")
 
 let hasLength = 8
 let hasCapitals = true
