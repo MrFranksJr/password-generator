@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Random Password Generator",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "images/favicon.png"
+    },
+    "permissions": [ 
+        "tabs"
+    ],
+    "icons": { "16": "images/favicon.png",
+           "48": "images/favicon.png",
+          "128": "images/favicon.png" }
+}
