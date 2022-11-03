@@ -14,13 +14,13 @@ The assignment was to make a simple random password generator. It basically focu
 The following were the base requirements of the assignment:
 * Create a simple button to generate 2 passwords on the screen
 * Create the entire thing 'from scratch', even though we are given a base array with all the characters. I did use this template as a basis. Also the design template was given. As my focus is mainly coding, and I thought the design was quite nice, I decided to follow this.
-* Each of the passwords should be 15 characters long
+* Each of the passwords should be 15 characters long<br>
 ![base requirements](https://github.com/MrFranksJr/MrFranksJr/blob/main/assets/password-generator/base-requirements.png)
 
 The following were the stretch goals of the assignment:
 * Ability to customize the pw length
 * Add copy-on-click functionality
-* Toggling to include or not include certain types of characters
+* Toggling to include or not include certain types of characters<br>
 ![Stretch goals](https://github.com/MrFranksJr/MrFranksJr/blob/main/assets/password-generator/stretch-goals.png)
 
 
@@ -29,8 +29,8 @@ The following were the stretch goals of the assignment:
 I took a step by step approach, making sure my logic all worked with the base requirements of this assignment.
 Other than that, I looked for inspiration around me. I used to use LastPass and now use NordPass and looked there for more inspiration.
 
-I really liked NordPass' approach and design. I wanted to build something similar.
-![NordPass password generator](https://github.com/MrFranksJr/MrFranksJr/blob/main/assets/password-generator/nordpass.png)
+I really liked NordPass' approach and design. I wanted to build something similar.<br>
+![NordPass password generator](https://github.com/MrFranksJr/MrFranksJr/blob/main/assets/password-generator/nordpass.png)<br>
 I really like the design of that app and decided to try and create some similar looking buttons, or at least check what is possible in CSS.
 On top of that, I think the slider is quite cool. I already know that it would've been quite easy to just have a text field somewhere where the user could enter the length of a password. But the slider is cooler. That led into some extra research being don on how to implement and also style that.
 
