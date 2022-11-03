@@ -34,7 +34,7 @@ I really liked NordPass' approach and design. I wanted to build something simila
 I really like the design of that app and decided to try and create some similar looking buttons, or at least check what is possible in CSS.
 On top of that, I think the slider is quite cool. I already know that it would've been quite easy to just have a text field somewhere where the user could enter the length of a password. But the slider is cooler. That led into some extra research being don on how to implement and also style that.
 
-The design and feature-set I ended up with looks like this:
+The design and feature-set I ended up with looks like this:<br>
 ![FRBL PW generator](https://github.com/MrFranksJr/MrFranksJr/blob/main/assets/password-generator/frbl-pw-generator.png)
 
 ### Some details on the code
